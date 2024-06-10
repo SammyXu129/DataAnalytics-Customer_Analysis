@@ -1,13 +1,30 @@
-# Customer-Analysis
+# Data Preparation, Customer Analytics, and Experimentation
 
-# Overview
-This project aims to provide strategic recommendations based on detailed analysis of customer purchasing behaviors and store performance during a trial period. We use customer segmentation to understand chip purchasing trends and evaluate the performance of specific stores during a trial to identify successful strategies and areas for improvement.
+## Notebooks Overview
+**1. (EDA) Data prep and customer analytics.ipynb**
 
-# Files📁
-data/: Folder containing all CSV data files used in the analyses.
-scripts/: ython scripts developed for the analyses.
-viz/: dashboard and report for representing the results.
-README.md: Documentation for the project.
+**Purpose**: This notebook focuses on Exploratory Data Analysis (EDA) and data preparation steps to understand customer behavior and prepare the data for further analysis.
 
-# Data Description 🗃️
-The project utilizes several CSV data files which include customer purchase records and store performance metrics. Initial tasks involve data cleaning, feature engineering, and exploratory data analysis.
+**Key Steps**:
+
+* **Data Loading**: Load the dataset and necessary libraries.
+* **Data Cleaning**: Handle missing values, correct data types, and filter out irrelevant data.
+* **Feature Engineering**: Create new features that can help in understanding customer behavior better.
+* **Descriptive Statistics**: Compute summary statistics to get an overview of the data.
+* **Visualization**: Use various plots to visualize the distribution and relationships within the data.
+
+**2. (TEST) Experimentation and uplift testing copy.ipynb**
+**Purpose**:This notebook is dedicated to experimentation, specifically conducting A/B tests to evaluate the impact of certain interventions (e.g., marketing campaigns) on sales and other metrics.
+
+**Key Functions**:
+**monthly_measure_metric()**:
+* Aggregates monthly sales metrics for each store.
+* Computes additional metrics like transactions per customer, chips per transaction, and average price per unit.
+* Returns a DataFrame with the aggregated metrics.
+
+**get_test(trial_num, column)**:
+* Conducts an A/B test for a given trial store number and metric.
+* Computes the ratio of control to trial metrics for pre-trial periods.
+* Scales control store metrics to match the trial store for comparison.
+* Calculates percentage differences and t-values for post-trial periods.
+* Returns standard deviation of pre-trial percentage differences, t-values for post-trial periods, and the critical t-value for significance testing.
