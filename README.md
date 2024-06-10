@@ -1,4 +1,9 @@
 # Data Preparation, Customer Analytics, and Experimentation
+## Project Background
+This is the Quantium Data Analytics project from Forage. The client wants to better understand the types of customers who purchase Chips and their purchasing behaviour within the region. And  then test the impact of the new trial layouts with a data driven recommendation to whether or not the trial layout should be rolled out to all their stores. 
+
+## Data Overview 
+There are three datasets inculding "QVI_purchase_behaviour.csv" & "QVI_transaction_data.csv" for EDA, "QVI_data.csv" for TEST. 
 
 ## Notebooks Overview
 **1. (EDA) Data prep and customer analytics.ipynb**
