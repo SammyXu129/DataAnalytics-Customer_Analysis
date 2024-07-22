@@ -43,7 +43,6 @@ There are three datasets inculding "QVI_purchase_behaviour.csv" & "QVI_transacti
 
 * **Data Loading**: Load the dataset and necessary libraries.
 * **Data Cleaning**: Handle missing values, correct data types, and filter out irrelevant data.
-* **Feature Engineering**: Create new features that can help in understanding customer behavior better.
 * **Descriptive Statistics**: Compute summary statistics to get an overview of the data.
 * **Visualization**: Use various plots to visualize the distribution and relationships within the data.
 
