@@ -30,34 +30,4 @@ This is the Quantium Data Analytics project from Forage. The client wants to bet
 
 - The control store is constructed to reflect performance of the trial store rather than the average of other stores; from Feb to May the trial store outperformed the control store highlighting the success of the new store layout
 
-  
-## Data Overview 
-There are three datasets inculding "QVI_purchase_behaviour.csv" & "QVI_transaction_data.csv" for EDA, "QVI_data.csv" for TEST. 
 
-## Notebooks Overview
-**1. (EDA) Data prep and customer analytics.ipynb**
-
-**Purpose**: This notebook focuses on Exploratory Data Analysis (EDA) and data preparation steps to understand customer behavior and prepare the data for further analysis.
-
-**Key Steps**:
-
-* **Data Loading**: Load the dataset and necessary libraries.
-* **Data Cleaning**: Handle missing values, correct data types, and filter out irrelevant data.
-* **Descriptive Statistics**: Compute summary statistics to get an overview of the data.
-* **Visualization**: Use various plots to visualize the distribution and relationships within the data.
-
-**2. (TEST) Experimentation and uplift testing copy.ipynb**
-**Purpose**:This notebook is dedicated to experimentation, specifically conducting A/B tests to evaluate the impact of certain interventions (e.g., marketing campaigns) on sales and other metrics.
-
-**Key Functions**:
-**monthly_measure_metric()**:
-* Aggregates monthly sales metrics for each store.
-* Computes additional metrics like transactions per customer, chips per transaction, and average price per unit.
-* Returns a DataFrame with the aggregated metrics.
-
-**get_test(trial_num, column)**:
-* Conducts an A/B test for a given trial store number and metric.
-* Computes the ratio of control to trial metrics for pre-trial periods.
-* Scales control store metrics to match the trial store for comparison.
-* Calculates percentage differences and t-values for post-trial periods.
-* Returns standard deviation of pre-trial percentage differences, t-values for post-trial periods, and the critical t-value for significance testing.
